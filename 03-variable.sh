@@ -1,6 +1,7 @@
 #!/bin/bash
 
- A=$1
- B=$2
- SUM=$((A+B))
+ NUMBER1=$1
+ NUMBER2=$2
+ SUM=$((NUMBER1+NUMBER2))
+ 
  
