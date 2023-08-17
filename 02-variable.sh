@@ -11,5 +11,5 @@ DATE=$(date)
 
  A=$1
  B=$2
- ADD=$((A+B))
+ SUM=$((A+B))
  
