@@ -5,7 +5,9 @@ USERID=$(id -u)
 if [ $USERID -ne 10 ]
 then  
   echo "please check root access"
+  exit 1
 fi
 
- yum install nginx
+ yum install nginx -y
  
+
