@@ -1,7 +1,15 @@
 #!/bin/bash
 
 USERID=$(id -u)
-
+VALIDATE () {
+if [ $? -ne 0 ]
+ then 
+   echo "installation is failure"
+   exit 1
+ else
+   echo "installation is success"
+ fi
+}
 if [ $USERID -ne 0 ]
 then  
   echo "please check root access"
@@ -10,11 +18,8 @@ fi
 
  yum install nginx -y
  
- if [ $? -ne 0 ]
- then 
-   echo "installation is failure"
-   exit 1
- else
-   echo "installation is success"
- fi   
+VALIDATE $? "INSTALLING NGINX"
 
+yum install mysql -y
+
+VALIDATE $? "INSTALLING MYSQL"
