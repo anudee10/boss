@@ -7,4 +7,5 @@ then
   echo "please check root access"
 fi
 
- yum install mysql
+ yum install nginx
+ 
