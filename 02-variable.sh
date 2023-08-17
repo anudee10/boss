@@ -1,7 +1,7 @@
 #!/bin/bash
 
-X=prem
-Y=ram
+X=$1
+Y=$2
 
 echo "$X: hiiii $Y"
 echo "$Y: hiiii $X"
