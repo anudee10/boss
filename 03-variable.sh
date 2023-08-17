@@ -4,6 +4,11 @@
  NUMBER2=$2
  SUM=$((NUMBER1+NUMBER2))
 
- echo "addition pf two numbers:$SUM"
- 
+ echo "addition of two numbers:$SUM"
+
+echo "enter ur username"
+read -s username
+
+echo "enter password"
+read -s password
  
