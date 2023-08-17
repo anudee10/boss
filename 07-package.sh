@@ -4,8 +4,9 @@ PACKAGE=$@
 VALIDATE () {
     if [ $1 -ne 0 ]
     then
+       echo "$2 is not installed"
+    else
        echo "$2 is installed"
-    
     fi   
 }
 
