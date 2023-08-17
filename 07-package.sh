@@ -2,7 +2,7 @@
 
 PACKAGE=$@
 VALIDATE () {
-    if [ $PACKAGE -e 0 ]
+    if [ $PACKAGE -ne 0 ]
     then
        echo "$PACKAGE is installed"
     else
