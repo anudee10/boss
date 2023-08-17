@@ -12,5 +12,4 @@ DATE=$(date)
  A=$1
  B=$2
  ADD=$((A+B))
- echo :addition of two numbers is:$ADD:
  
