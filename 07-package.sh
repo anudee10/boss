@@ -2,11 +2,11 @@
 
 PACKAGE=$@
 VALIDATE () {
-    if [ $PACKAGE -ne 0 ]
+    if [ $1 -ne 0 ]
     then
-       echo "$1 is installed"
+       echo "$2 is installed"
     else
-       echo "$1 not installed"
+       echo "$2 not installed"
     fi   
 }
 
