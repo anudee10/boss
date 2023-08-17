@@ -6,3 +6,5 @@ if [ $USERID -ne 10 ]
 then  
   echo "please check root access"
 fi
+
+ yum install mysql
