@@ -17,3 +17,5 @@ VALIDATE $? "already installed nginx"
 yum install mysql -y
 
 VALIDATE $? "already installed mysql"
+
+echo "successful"
