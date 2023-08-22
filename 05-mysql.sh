@@ -1,6 +1,11 @@
 #!/bin/bash
 
+DATE=$(date +%f-%H-%M-%S)
+script_name=$0
+LOGFILE=/tmp/$script_name-$DATE.log
+
 USERID=$(id -u)
+
 VALIDATE () {
 if [ $1 -ne 0 ]
  then 
@@ -16,10 +21,10 @@ then
   exit 1
 fi
 
- yum install nginx -y
+ yum install nginx -y &>>$LOGFILE
  
 VALIDATE $? "INSTALLING NGINX"
 
-yum install mysql -y
+yum install mysql -y &>>$LOGFILE
 
 VALIDATE $? "INSTALLING MYSQL"
